@@ -30,21 +30,6 @@ export const useSort = <TSortEnum extends TSortShape = TSortShape>(props: IProps
         [defaultSort, searchParams]
     );
 
-    // const handleChange = useCallback(
-    //     (itemSort: TSortEnum | null): void => {
-    //         setSearchParams((prevSearchParams: URLSearchParams): URLSearchParams => {
-    //             if (!itemSort || itemSort === defaultSort) {
-    //                 prevSearchParams.delete(SORT_QUERY_KEY);
-    //             } else {
-    //                 prevSearchParams.set(SORT_QUERY_KEY, String(itemSort));
-    //             }
-    //
-    //             return prevSearchParams;
-    //         });
-    //     },
-    //     [defaultSort, setSearchParams]
-    // );
-
     const {
         render: renderSelect,
         value,
