@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createHashRouter } from 'react-router-dom';
 import Index from '@/pages';
 import React from 'react';
 import Products from '@/pages/products';
@@ -7,7 +7,7 @@ import ProductCreate from '@/pages/productCreate';
 
 import { ROUTES } from '@/router/routes';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: ROUTES.ROOT.path,
         element: <Index />
