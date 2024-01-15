@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "target": "es5",
-        "lib": ["dom", "dom.iterable"],
+        "lib": ["dom", "dom.iterable", "esnext"],
         "allowJs": true,
         "skipLibCheck": true,
         "strict": true,
@@ -11,18 +11,20 @@
         "moduleResolution": "node",
         "resolveJsonModule": true,
         "isolatedModules": true,
-        "jsx": "preserve",
+        "module": "ESNext",
+        "jsx": "react-jsx",
         "incremental": true,
         "strictNullChecks": true,
         "strictFunctionTypes": true,
         "noImplicitAny": true,
         "noImplicitReturns": true,
         "noImplicitThis": true,
+        "baseUrl": ".",
         "paths": {
-            "@/*": ["./*"]
+            "@/*": ["./src/*"]
         },
         "pretty": true
     },
-    "include": ["**/*.ts", "**/*.tsx"],
+    "include": ["./src/**/*.ts", "./src/**/*.tsx"],
     "exclude": ["node_modules"]
 }

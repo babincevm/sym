@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+<h1>Front Developer React</h1>
+Требуется создать приложение для управления данными о продуктах,
+включая списки продуктов из API и тех,
+которые добавлены через форму.
+Важно использовать Redux и выполнить запросы к онлайн JSON API,
+например, https://fakestoreapi.com/ (ссылка на документацию предоставлена).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Можно воспользоваться библиотеками для пользовательского интерфейса и работы с формой.
+Оцениваться будут подход к заданию, качество и структура кода, а также внимательность.
+Код следует выложить на GitHub, указав приблизительное время, затраченное на разработку.
 
-## Available Scripts
+<h2>Задача 1: Вывести список продуктов</h2>
+<ul>
+    <li>
+        На странице /products в отдельной вкладке следует отобразить карточки продуктов,
+        включая изображение, название и цену.
+    </li>
+    <li>Реализовать API-запрос для начальной загрузки 8 продуктов.</li>
+    <li>Добавить кнопки для загрузки 8, 16 и всех продуктов.</li>
+    <li>Реализовать переходы на страницу продукта.</li>
+</ul>
 
-In the project directory, you can run:
+<h2>Задача 2: Страница продукта</h2>
+<ul>
+    <li>На странице /products/:id предоставить более подробную информацию о продукте.</li>
+</ul>
 
-### `npm start`
+<h2>Задача 3: Создание (редактирования) продукта</h2>
+<ul>
+    <li>
+        Реализовать страницу создания(редактирования) продукта с формой,
+        включающей поля: название, цена, описание, опубликован (чекбокс/свитч).
+    </li>
+    <li>Поля обязательны, с минимальной валидацией. Сохранить дату создания.</li>
+    <li>Использовать API-запрос.</li>
+    <li>После успешной отправки формы, сохранить данные для отображения в списке.</li>
+</ul>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h2>Задача 4: Список созданных продуктов</h2>
+<ul>
+    <li>На странице /products отобразить таблицу созданных продуктов в отдельной вкладке.</li>
+    <li>Добавить переключатель для фильтрации по опубликованным и неопубликованным продуктам.</li>
+    <li>Список должен сохраняться при перезагрузке страницы.</li>
+    <li>Добавить переход на экран редактирования продукта.</li>
+</ul>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h2>Задача 5: Удаление продукта</h2>
+<ul>
+    <li>На экране редактирования продукта и в таблице созданных продуктов реализовать удаление с использованием API-запроса.</li>
+    <li>Добавить подтверждение удаления.</li>
+</ul>
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h2>Будет плюсом.</h2>
+<ul>
+    <li>Реализовать сортировку, пагинацию и фильтрацию списков.</li>
+    <li>Добавить поиск без кнопки отправки.</li>
+    <li>Внедрить минимальную систему авторизации для доступа к страницам.</li>
+</ul>

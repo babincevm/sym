@@ -30,7 +30,7 @@ module.exports = {
             version: 'detect'
         }
     },
-    ignorePatterns: ['.eslintrc.js'],
+    ignorePatterns: ['.eslintrc.js', 'config-overrides.js', 'docs/'],
     plugins: [
         '@typescript-eslint',
         'eslint-plugin-import',
@@ -373,6 +373,7 @@ module.exports = {
                     'module',
 
                     '/types($|/)/',
+                    '/^@/router($|/)/',
                     '/^@/helpers($|/)/',
                     '/^@/api($|/)/',
                     '/^@/contexts($|/)/',

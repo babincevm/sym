@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.00433a5d.css","mappings":"AACE,yCAKE,YAFA,OAGA,mBALA,kBACA,MAEA,WAGA","sources":["ui/SImageUpload/SImageUpload.module.scss"],"sourcesContent":[".SImageUpload {\n  &__image {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    object-fit: contain;\n    z-index: 1;\n  }\n}\n"],"names":[],"sourceRoot":""}
